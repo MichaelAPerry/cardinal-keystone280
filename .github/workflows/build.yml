@@ -22,7 +22,11 @@ jobs:
   wasm:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v4
+      - name: Use GitHub mirrors for flaky submodule hosts
+        run: |
+          git config --global url."https://github.com/xiph/speexdsp".insteadOf "https://gitlab.xiph.org/xiph/speexdsp"
+          git config --global url."https://github.com/xiph/speexdsp.git".insteadOf "https://gitlab.xiph.org/xiph/speexdsp.git"
+      - uses: actions/checkout@v5
         with:
           submodules: recursive
       - name: Set up cache
