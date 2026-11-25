@@ -84,7 +84,7 @@
 
 #ifdef DISTRHO_OS_WASM
 # if CARDINAL_VARIANT_MINI
-#  define CARDINAL_WASM_WELCOME_TEMPLATE_FILENAME "welcome-wasm-mini"
+#  define CARDINAL_WASM_WELCOME_TEMPLATE_FILENAME "welcome-wasm-mini-junco"
 # else
 #  define CARDINAL_WASM_WELCOME_TEMPLATE_FILENAME "welcome-wasm"
 # endif

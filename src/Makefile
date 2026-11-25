@@ -147,7 +147,9 @@ loader: $(TARGETS)
 
 mini: $(TARGETS)
 	$(MAKE) jack -C CardinalMini
+ifneq ($(WASM),true)
 	$(MAKE) lv2_sep -C CardinalMiniSep
+endif
 
 au: $(TARGETS)
 	$(MAKE) au -C CardinalFX $(CARDINAL_SYNTH_ARGS)

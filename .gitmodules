@@ -266,3 +266,6 @@
 [submodule "plugins/Venom"]
 	path = plugins/Venom
 	url = https://github.com/DaveBenham/VenomModules
+[submodule "plugins/Keystone280"]
+	path = plugins/Keystone280
+	url = https://github.com/MichaelAPerry/keystone280-vcv.git

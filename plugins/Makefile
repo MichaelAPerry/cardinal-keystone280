@@ -1356,6 +1356,13 @@ ZZC_CUSTOM = Clock LowFrequencyOscillator LedLight Step PolyModeValueItem PolyMo
 ZZC_CUSTOM_PER_FILE = ExternalCVModeCompatibleOptionItem ExternalCVModeVBPSOptionItem SnapCVOptionItem ExternalCVModeItem
 
 # --------------------------------------------------------------
+# Keystone280
+
+KEYSTONE280_FILES = $(filter-out Keystone280/src/plugin.cpp,$(wildcard Keystone280/src/*.cpp))
+PLUGIN_FILES += $(KEYSTONE280_FILES)
+MINIPLUGIN_FILES += $(KEYSTONE280_FILES)
+
+# --------------------------------------------------------------
 # Build setup
 
 ifeq ($(HEADLESS),true)
@@ -1523,6 +1530,7 @@ MINIPLUGIN_LIST    += AriaModules
 MINIPLUGIN_LIST    += AudibleInstruments
 MINIPLUGIN_LIST    += BogaudioModules
 MINIPLUGIN_LIST    += Fundamental
+MINIPLUGIN_LIST    += Keystone280
 MINIPLUGIN_LIST    += MockbaModular
 MINIPLUGIN_LIST    += surgext
 # MINIPLUGIN_LIST    += ValleyAudio
@@ -1704,6 +1712,8 @@ MINIRESOURCE_FILES += Fundamental/res/components/port.svg
 MINIRESOURCE_FILES += Fundamental/res/components/Quantizer-keyboard.svg
 MINIRESOURCE_FILES += Fundamental/res/components/Scope-bg.svg
 
+MINIRESOURCE_FILES += $(wildcard Keystone280/res/*.svg)
+
 MINIRESOURCE_FILES += MockbaModular/res/CZOsc.svg
 MINIRESOURCE_FILES += MockbaModular/res/Empty_gray.svg
 MINIRESOURCE_FILES += MockbaModular/res/Filtah.svg
@@ -1861,8 +1871,8 @@ LV2_RESOURCES += $(RESOURCE_FILES:%=../bin/CardinalNative.lv2/resources/%)
 
 else
 
-LV2_RESOURCES += $(MINIPLUGIN_LIST:%=../bin/CardinalMini.lv2/resources/PluginManifests/%.json)
-LV2_RESOURCES += $(MINIRESOURCE_FILES:%=../bin/CardinalMini.lv2/resources/%)
+MINI_RESOURCES  = $(MINIPLUGIN_LIST:%=../bin/CardinalMini.lv2/resources/PluginManifests/%.json)
+MINI_RESOURCES += $(MINIRESOURCE_FILES:%=../bin/CardinalMini.lv2/resources/%)
 
 LV2_RESOURCES  = $(MINI_RESOURCES)
 LV2_RESOURCES += $(PLUGIN_LIST:%=../bin/Cardinal.lv2/resources/PluginManifests/%.json)
@@ -2419,6 +2429,14 @@ $(BUILD_DIR)/forsitan-modulare/%.cpp.o: forsitan-modulare/%.cpp
 	$(SILENT)$(CXX) $< $(BUILD_CXX_FLAGS) -c -o $@ \
 		$(foreach m,$(FORSITAN_CUSTOM),$(call custom_module_names,$(m),forsitan)) \
 		-DpluginInstance=pluginInstance__forsitan
+
+$(BUILD_DIR)/Keystone280/%.cpp.o: Keystone280/%.cpp
+	-@mkdir -p "$(shell dirname $(BUILD_DIR)/$<)"
+	@echo "Compiling $<"
+	$(SILENT)$(CXX) $< $(BUILD_CXX_FLAGS) -std=gnu++17 -c -o $@ \
+		-I$(abspath Keystone280/engine) \
+		-DpluginInstance=pluginInstance__Keystone280 \
+		$(call custom_per_file_names,RockerSwitch,Keystone280)
 
 $(BUILD_DIR)/Fundamental/%.c.o: Fundamental/%.c
 	-@mkdir -p "$(shell dirname $(BUILD_DIR)/$<)"

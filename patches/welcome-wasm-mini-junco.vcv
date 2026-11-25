@@ -1,0 +1,512 @@
+{
+ "version": "2.6.4",
+ "zoom": 1.0,
+ "modules": [
+  {
+   "id": 1,
+   "plugin": "MichaelPerry-Keystone280",
+   "model": "Brandywine",
+   "version": "2.0.0",
+   "params": [],
+   "pos": [
+    0,
+    0
+   ]
+  },
+  {
+   "id": 2,
+   "plugin": "MichaelPerry-Keystone280",
+   "model": "Lackawanna",
+   "version": "2.0.0",
+   "params": [],
+   "pos": [
+    28,
+    0
+   ]
+  },
+  {
+   "id": 3,
+   "plugin": "MichaelPerry-Keystone280",
+   "model": "Monongahela",
+   "version": "2.0.0",
+   "params": [],
+   "pos": [
+    36,
+    0
+   ]
+  },
+  {
+   "id": 4,
+   "plugin": "MichaelPerry-Keystone280",
+   "model": "Allegheny",
+   "version": "2.0.0",
+   "params": [],
+   "pos": [
+    44,
+    0
+   ]
+  },
+  {
+   "id": 5,
+   "plugin": "MichaelPerry-Keystone280",
+   "model": "Schuylkill",
+   "version": "2.0.0",
+   "params": [
+    {
+     "id": 0,
+     "value": 0
+    },
+    {
+     "id": 1,
+     "value": 0.4
+    }
+   ],
+   "pos": [
+    52,
+    0
+   ]
+  },
+  {
+   "id": 6,
+   "plugin": "MichaelPerry-Keystone280",
+   "model": "Schuylkill",
+   "version": "2.0.0",
+   "params": [
+    {
+     "id": 0,
+     "value": 1
+    },
+    {
+     "id": 1,
+     "value": 0
+    }
+   ],
+   "pos": [
+    60,
+    0
+   ]
+  },
+  {
+   "id": 7,
+   "plugin": "MichaelPerry-Keystone280",
+   "model": "Lehigh",
+   "version": "2.0.0",
+   "params": [
+    {
+     "id": 0,
+     "value": 0.05
+    },
+    {
+     "id": 1,
+     "value": 0.2
+    },
+    {
+     "id": 2,
+     "value": 0.7
+    },
+    {
+     "id": 3,
+     "value": 0.15
+    }
+   ],
+   "pos": [
+    68,
+    0
+   ]
+  },
+  {
+   "id": 8,
+   "plugin": "MichaelPerry-Keystone280",
+   "model": "Lehigh",
+   "version": "2.0.0",
+   "params": [],
+   "pos": [
+    76,
+    0
+   ]
+  },
+  {
+   "id": 9,
+   "plugin": "MichaelPerry-Keystone280",
+   "model": "Juniata",
+   "version": "2.0.0",
+   "params": [
+    {
+     "id": 0,
+     "value": 0
+    },
+    {
+     "id": 1,
+     "value": 0.8
+    },
+    {
+     "id": 4,
+     "value": 0.3
+    },
+    {
+     "id": 5,
+     "value": 0.225
+    },
+    {
+     "id": 6,
+     "value": 0.35
+    },
+    {
+     "id": 7,
+     "value": 0.15
+    },
+    {
+     "id": 8,
+     "value": 0.275
+    },
+    {
+     "id": 9,
+     "value": 0.2
+    },
+    {
+     "id": 10,
+     "value": 0.375
+    },
+    {
+     "id": 11,
+     "value": 0.25
+    },
+    {
+     "id": 12,
+     "value": 0.1
+    },
+    {
+     "id": 13,
+     "value": 0.25
+    },
+    {
+     "id": 14,
+     "value": 0.05
+    },
+    {
+     "id": 15,
+     "value": 0.3
+    },
+    {
+     "id": 16,
+     "value": 0.15
+    },
+    {
+     "id": 17,
+     "value": 0.2
+    },
+    {
+     "id": 18,
+     "value": 0.0
+    },
+    {
+     "id": 19,
+     "value": 0.3
+    },
+    {
+     "id": 46,
+     "value": 0
+    },
+    {
+     "id": 47,
+     "value": 0
+    },
+    {
+     "id": 49,
+     "value": 0
+    }
+   ],
+   "pos": [
+    84,
+    0
+   ],
+   "data": {
+    "oscRunning": true
+   }
+  },
+  {
+   "id": 12,
+   "plugin": "MichaelPerry-Keystone280",
+   "model": "Susquehanna",
+   "version": "2.0.0",
+   "params": [
+    {
+     "id": 0,
+     "value": 0.5
+    },
+    {
+     "id": 1,
+     "value": 5
+    },
+    {
+     "id": 2,
+     "value": 0
+    },
+    {
+     "id": 3,
+     "value": 0
+    },
+    {
+     "id": 7,
+     "value": 0
+    }
+   ],
+   "pos": [
+    14,
+    1
+   ]
+  },
+  {
+   "id": 13,
+   "plugin": "MichaelPerry-Keystone280",
+   "model": "Clarion",
+   "version": "2.0.0",
+   "params": [
+    {
+     "id": 0,
+     "value": 0.5
+    },
+    {
+     "id": 1,
+     "value": 0
+    },
+    {
+     "id": 2,
+     "value": 0
+    },
+    {
+     "id": 3,
+     "value": 0
+    },
+    {
+     "id": 4,
+     "value": 0.5
+    }
+   ],
+   "pos": [
+    28,
+    1
+   ]
+  },
+  {
+   "id": 14,
+   "plugin": "MichaelPerry-Keystone280",
+   "model": "Susquehanna",
+   "version": "2.0.0",
+   "params": [
+    {
+     "id": 0,
+     "value": 0.55
+    },
+    {
+     "id": 1,
+     "value": 4
+    },
+    {
+     "id": 2,
+     "value": 0
+    },
+    {
+     "id": 3,
+     "value": 1
+    },
+    {
+     "id": 4,
+     "value": 0.5
+    },
+    {
+     "id": 5,
+     "value": 4
+    },
+    {
+     "id": 7,
+     "value": 1.0
+    }
+   ],
+   "pos": [
+    42,
+    1
+   ],
+   "data": {
+    "unitB": true
+   }
+  },
+  {
+   "id": 15,
+   "plugin": "MichaelPerry-Keystone280",
+   "model": "Kiski",
+   "version": "2.0.0",
+   "params": [],
+   "pos": [
+    56,
+    1
+   ]
+  },
+  {
+   "id": 16,
+   "plugin": "MichaelPerry-Keystone280",
+   "model": "Conestoga",
+   "version": "2.0.0",
+   "params": [
+    {
+     "id": 1,
+     "value": 0.725
+    }
+   ],
+   "pos": [
+    77,
+    1
+   ]
+  },
+  {
+   "id": 17,
+   "plugin": "MichaelPerry-Keystone280",
+   "model": "Loyalsock",
+   "version": "2.0.0",
+   "params": [],
+   "pos": [
+    98,
+    1
+   ]
+  },
+  {
+   "id": 18,
+   "plugin": "MichaelPerry-Keystone280",
+   "model": "Swatara",
+   "version": "2.0.0",
+   "params": [],
+   "pos": [
+    118,
+    1
+   ]
+  },
+  {
+   "id": 19,
+   "plugin": "MichaelPerry-Keystone280",
+   "model": "Tioga",
+   "version": "2.0.0",
+   "params": [],
+   "pos": [
+    126,
+    1
+   ]
+  },
+  {
+   "id": 21,
+   "plugin": "Cardinal",
+   "model": "HostAudio2",
+   "version": "2.0",
+   "params": [
+    {
+     "value": 0.7943282127380371,
+     "id": 0
+    }
+   ],
+   "pos": [
+    140,
+    1
+   ],
+   "data": {
+    "dcFilter": true
+   }
+  }
+ ],
+ "cables": [
+  {
+   "id": 1,
+   "outputModuleId": 9,
+   "outputId": 0,
+   "inputModuleId": 16,
+   "inputId": 5,
+   "color": "#f3374b"
+  },
+  {
+   "id": 2,
+   "outputModuleId": 16,
+   "outputId": 4,
+   "inputModuleId": 7,
+   "inputId": 0,
+   "color": "#ffb437"
+  },
+  {
+   "id": 3,
+   "outputModuleId": 9,
+   "outputId": 10,
+   "inputModuleId": 12,
+   "inputId": 4,
+   "color": "#00b56e"
+  },
+  {
+   "id": 4,
+   "outputModuleId": 9,
+   "outputId": 12,
+   "inputModuleId": 14,
+   "inputId": 4,
+   "color": "#3695ef"
+  },
+  {
+   "id": 5,
+   "outputModuleId": 12,
+   "outputId": 2,
+   "inputModuleId": 5,
+   "inputId": 0,
+   "color": "#8b4ade"
+  },
+  {
+   "id": 6,
+   "outputModuleId": 14,
+   "outputId": 1,
+   "inputModuleId": 5,
+   "inputId": 2,
+   "color": "#f3374b"
+  },
+  {
+   "id": 7,
+   "outputModuleId": 14,
+   "outputId": 4,
+   "inputModuleId": 13,
+   "inputId": 0,
+   "color": "#ffb437"
+  },
+  {
+   "id": 8,
+   "outputModuleId": 13,
+   "outputId": 6,
+   "inputModuleId": 12,
+   "inputId": 5,
+   "color": "#00b56e"
+  },
+  {
+   "id": 9,
+   "outputModuleId": 5,
+   "outputId": 1,
+   "inputModuleId": 6,
+   "inputId": 0,
+   "color": "#3695ef"
+  },
+  {
+   "id": 10,
+   "outputModuleId": 7,
+   "outputId": 0,
+   "inputModuleId": 6,
+   "inputId": 2,
+   "color": "#8b4ade"
+  },
+  {
+   "id": 11,
+   "outputModuleId": 6,
+   "outputId": 1,
+   "inputModuleId": 21,
+   "inputId": 0,
+   "color": "#f3374b"
+  },
+  {
+   "id": 12,
+   "outputModuleId": 6,
+   "outputId": 1,
+   "inputModuleId": 21,
+   "inputId": 1,
+   "color": "#ffb437"
+  }
+ ]
+}

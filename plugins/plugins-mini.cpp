@@ -26,6 +26,9 @@
 // Fundamental
 #include "Fundamental/src/plugin.hpp"
 
+// Keystone280
+#include "Keystone280/src/plugin.hpp"
+
 // Aria
 extern Model* modelSpleet;
 extern Model* modelSwerge;
@@ -81,6 +84,7 @@ std::vector<Model*> hostTerminalModels;
 // plugin instances
 Plugin* pluginInstance__Cardinal;
 Plugin* pluginInstance__Fundamental;
+Plugin* pluginInstance__Keystone280;
 Plugin* pluginInstance__Aria;
 Plugin* pluginInstance__AudibleInstruments;
 Plugin* pluginInstance__BogaudioModules;
@@ -236,6 +240,31 @@ static void initStatic__Cardinal()
             modelHostParametersMap,
             modelHostTime,
         };
+    }
+}
+
+static void initStatic__Keystone280()
+{
+    Plugin* const p = new Plugin;
+    pluginInstance__Keystone280 = p;
+
+    const StaticPluginLoader spl(p, "Keystone280");
+    if (spl.ok())
+    {
+        p->addModel(modelSusquehanna);
+        p->addModel(modelSchuylkill);
+        p->addModel(modelLehigh);
+        p->addModel(modelAllegheny);
+        p->addModel(modelMonongahela);
+        p->addModel(modelLackawanna);
+        p->addModel(modelBrandywine);
+        p->addModel(modelJuniata);
+        p->addModel(modelConestoga);
+        p->addModel(modelTioga);
+        p->addModel(modelClarion);
+        p->addModel(modelKiski);
+        p->addModel(modelLoyalsock);
+        p->addModel(modelSwatara);
     }
 }
 
@@ -640,6 +669,7 @@ void initStaticPlugins()
 {
     initStatic__Cardinal();
     initStatic__Fundamental();
+    initStatic__Keystone280();
     initStatic__Aria();
     initStatic__AudibleInstruments();
     initStatic__BogaudioModules();
