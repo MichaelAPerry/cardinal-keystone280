@@ -1358,7 +1358,10 @@ ZZC_CUSTOM_PER_FILE = ExternalCVModeCompatibleOptionItem ExternalCVModeVBPSOptio
 # --------------------------------------------------------------
 # Keystone280
 
-KEYSTONE280_FILES = $(filter-out Keystone280/src/plugin.cpp,$(wildcard Keystone280/src/*.cpp))
+KEYSTONE280_MODULES = Vco921 Vca902 Env911 Lpf904A Interface961 Seq960 Hpf904B Filters923 \
+                     Bank914 Seq962 Mixer3 Atten35 Abacus Quantimator Ears Cm1a DistingFx
+KEYSTONE280_FILES = $(KEYSTONE280_MODULES:%=Keystone280/src/%.cpp)
+KEYSTONE280_PANELS = $(KEYSTONE280_MODULES:%=Keystone280/res/%.svg)
 PLUGIN_FILES += $(KEYSTONE280_FILES)
 MINIPLUGIN_FILES += $(KEYSTONE280_FILES)
 
@@ -1471,6 +1474,7 @@ UNWANTED_FILES += $(wildcard Meander/res/*)
 UNWANTED_FILES += $(wildcard Mog/res/*)
 UNWANTED_FILES += $(wildcard Mog/res/*/*)
 UNWANTED_FILES += $(wildcard nonlinearcircuits/res/*)
+UNWANTED_FILES += $(wildcard Keystone280/res/*.svg)
 
 RESOURCE_FILES = \
 	$(filter-out $(UNWANTED_FILES), \
@@ -1486,6 +1490,7 @@ RESOURCE_FILES = \
 		$(wildcard */res/*/*.ttf) \
 		$(wildcard */res/*/*/*.ttf))
 
+RESOURCE_FILES += $(KEYSTONE280_PANELS)
 RESOURCE_FILES += $(wildcard */presets)
 RESOURCE_FILES += $(wildcard Orbits/res/*.json)
 RESOURCE_FILES += ArableInstruments/res/Joni.png
@@ -1712,7 +1717,7 @@ MINIRESOURCE_FILES += Fundamental/res/components/port.svg
 MINIRESOURCE_FILES += Fundamental/res/components/Quantizer-keyboard.svg
 MINIRESOURCE_FILES += Fundamental/res/components/Scope-bg.svg
 
-MINIRESOURCE_FILES += $(wildcard Keystone280/res/*.svg)
+MINIRESOURCE_FILES += $(KEYSTONE280_PANELS)
 
 MINIRESOURCE_FILES += MockbaModular/res/CZOsc.svg
 MINIRESOURCE_FILES += MockbaModular/res/Empty_gray.svg
@@ -2433,9 +2438,9 @@ $(BUILD_DIR)/forsitan-modulare/%.cpp.o: forsitan-modulare/%.cpp
 $(BUILD_DIR)/Keystone280/%.cpp.o: Keystone280/%.cpp
 	-@mkdir -p "$(shell dirname $(BUILD_DIR)/$<)"
 	@echo "Compiling $<"
-	$(SILENT)$(CXX) $< $(BUILD_CXX_FLAGS) -std=gnu++17 -c -o $@ \
+	$(SILENT)$(CXX) $< $(filter-out -std=%,$(BUILD_CXX_FLAGS)) -std=gnu++17 -fno-finite-math-only -c -o $@ \
 		-I$(abspath Keystone280/engine) \
-		-DpluginInstance=pluginInstance__Keystone280 \
+		-DK280_CARDINAL -DpluginInstance=pluginInstance__Keystone280 \
 		$(call custom_per_file_names,RockerSwitch,Keystone280)
 
 $(BUILD_DIR)/Fundamental/%.c.o: Fundamental/%.c

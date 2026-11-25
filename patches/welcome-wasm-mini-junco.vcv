@@ -4,8 +4,8 @@
  "modules": [
   {
    "id": 1,
-   "plugin": "MichaelPerry-Keystone280",
-   "model": "Brandywine",
+   "plugin": "Keystone280",
+   "model": "Bank914",
    "version": "2.0.0",
    "params": [],
    "pos": [
@@ -15,8 +15,8 @@
   },
   {
    "id": 2,
-   "plugin": "MichaelPerry-Keystone280",
-   "model": "Lackawanna",
+   "plugin": "Keystone280",
+   "model": "Filters923",
    "version": "2.0.0",
    "params": [],
    "pos": [
@@ -26,8 +26,8 @@
   },
   {
    "id": 3,
-   "plugin": "MichaelPerry-Keystone280",
-   "model": "Monongahela",
+   "plugin": "Keystone280",
+   "model": "Hpf904B",
    "version": "2.0.0",
    "params": [],
    "pos": [
@@ -37,8 +37,8 @@
   },
   {
    "id": 4,
-   "plugin": "MichaelPerry-Keystone280",
-   "model": "Allegheny",
+   "plugin": "Keystone280",
+   "model": "Lpf904A",
    "version": "2.0.0",
    "params": [],
    "pos": [
@@ -48,8 +48,8 @@
   },
   {
    "id": 5,
-   "plugin": "MichaelPerry-Keystone280",
-   "model": "Schuylkill",
+   "plugin": "Keystone280",
+   "model": "Vca902",
    "version": "2.0.0",
    "params": [
     {
@@ -68,8 +68,8 @@
   },
   {
    "id": 6,
-   "plugin": "MichaelPerry-Keystone280",
-   "model": "Schuylkill",
+   "plugin": "Keystone280",
+   "model": "Vca902",
    "version": "2.0.0",
    "params": [
     {
@@ -88,8 +88,8 @@
   },
   {
    "id": 7,
-   "plugin": "MichaelPerry-Keystone280",
-   "model": "Lehigh",
+   "plugin": "Keystone280",
+   "model": "Env911",
    "version": "2.0.0",
    "params": [
     {
@@ -116,8 +116,8 @@
   },
   {
    "id": 8,
-   "plugin": "MichaelPerry-Keystone280",
-   "model": "Lehigh",
+   "plugin": "Keystone280",
+   "model": "Env911",
    "version": "2.0.0",
    "params": [],
    "pos": [
@@ -127,8 +127,8 @@
   },
   {
    "id": 9,
-   "plugin": "MichaelPerry-Keystone280",
-   "model": "Juniata",
+   "plugin": "Keystone280",
+   "model": "Seq960",
    "version": "2.0.0",
    "params": [
     {
@@ -225,9 +225,31 @@
    }
   },
   {
+   "id": 10,
+   "plugin": "Keystone280",
+   "model": "Ears",
+   "version": "2.0.0",
+   "params": [],
+   "pos": [
+    6,
+    1
+   ]
+  },
+  {
+   "id": 11,
+   "plugin": "Keystone280",
+   "model": "DistingFx",
+   "version": "2.0.0",
+   "params": [],
+   "pos": [
+    10,
+    1
+   ]
+  },
+  {
    "id": 12,
-   "plugin": "MichaelPerry-Keystone280",
-   "model": "Susquehanna",
+   "plugin": "Keystone280",
+   "model": "Vco921",
    "version": "2.0.0",
    "params": [
     {
@@ -258,8 +280,8 @@
   },
   {
    "id": 13,
-   "plugin": "MichaelPerry-Keystone280",
-   "model": "Clarion",
+   "plugin": "Keystone280",
+   "model": "Mixer3",
    "version": "2.0.0",
    "params": [
     {
@@ -290,8 +312,8 @@
   },
   {
    "id": 14,
-   "plugin": "MichaelPerry-Keystone280",
-   "model": "Susquehanna",
+   "plugin": "Keystone280",
+   "model": "Vco921",
    "version": "2.0.0",
    "params": [
     {
@@ -333,8 +355,8 @@
   },
   {
    "id": 15,
-   "plugin": "MichaelPerry-Keystone280",
-   "model": "Kiski",
+   "plugin": "Keystone280",
+   "model": "Atten35",
    "version": "2.0.0",
    "params": [],
    "pos": [
@@ -344,8 +366,8 @@
   },
   {
    "id": 16,
-   "plugin": "MichaelPerry-Keystone280",
-   "model": "Conestoga",
+   "plugin": "Keystone280",
+   "model": "Interface961",
    "version": "2.0.0",
    "params": [
     {
@@ -360,8 +382,8 @@
   },
   {
    "id": 17,
-   "plugin": "MichaelPerry-Keystone280",
-   "model": "Loyalsock",
+   "plugin": "Keystone280",
+   "model": "Abacus",
    "version": "2.0.0",
    "params": [],
    "pos": [
@@ -371,8 +393,8 @@
   },
   {
    "id": 18,
-   "plugin": "MichaelPerry-Keystone280",
-   "model": "Swatara",
+   "plugin": "Keystone280",
+   "model": "Quantimator",
    "version": "2.0.0",
    "params": [],
    "pos": [
@@ -382,12 +404,23 @@
   },
   {
    "id": 19,
-   "plugin": "MichaelPerry-Keystone280",
-   "model": "Tioga",
+   "plugin": "Keystone280",
+   "model": "Seq962",
    "version": "2.0.0",
    "params": [],
    "pos": [
     126,
+    1
+   ]
+  },
+  {
+   "id": 20,
+   "plugin": "Keystone280",
+   "model": "Cm1a",
+   "version": "2.0.0",
+   "params": [],
+   "pos": [
+    134,
     1
    ]
   },

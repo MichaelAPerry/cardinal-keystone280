@@ -1227,20 +1227,23 @@ static void initStatic__Keystone280()
     const StaticPluginLoader spl(p, "Keystone280");
     if (spl.ok())
     {
-        p->addModel(modelSusquehanna);
-        p->addModel(modelSchuylkill);
-        p->addModel(modelLehigh);
-        p->addModel(modelAllegheny);
-        p->addModel(modelMonongahela);
-        p->addModel(modelLackawanna);
-        p->addModel(modelBrandywine);
-        p->addModel(modelJuniata);
-        p->addModel(modelConestoga);
-        p->addModel(modelTioga);
-        p->addModel(modelClarion);
-        p->addModel(modelKiski);
-        p->addModel(modelLoyalsock);
-        p->addModel(modelSwatara);
+        p->addModel(modelVco921);
+        p->addModel(modelVca902);
+        p->addModel(modelEnv911);
+        p->addModel(modelLpf904A);
+        p->addModel(modelInterface961);
+        p->addModel(modelSeq960);
+        p->addModel(modelHpf904B);
+        p->addModel(modelFilters923);
+        p->addModel(modelBank914);
+        p->addModel(modelSeq962);
+        p->addModel(modelMixer3);
+        p->addModel(modelAtten35);
+        p->addModel(modelAbacus);
+        p->addModel(modelQuantimator);
+        p->addModel(modelEars);
+        p->addModel(modelCm1a);
+        p->addModel(modelDistingFx);
     }
 }
 

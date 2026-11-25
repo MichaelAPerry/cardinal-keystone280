@@ -1,11 +1,18 @@
 # Keystone 280 for CardinalMini
 
 This fork combines [DISTRHO Cardinal](https://github.com/DISTRHO/Cardinal),
-licensed GPL-3.0-or-later, with the [Keystone 280 VCV Rack plugin](https://github.com/MichaelAPerry/keystone280-vcv),
-also GPL-3.0-or-later. It provides a CardinalMini web build for
-[michaelperry.org](https://michaelperry.org) that opens the **Dark-eyed Junco —
-Snowbirds at the Feeder** demo on first launch. The original Cardinal Mini
-welcome patch is still bundled as `patches/welcome-wasm-mini.vcv`.
+licensed GPL-3.0-or-later, with the [Keystone 280 rack edition](https://github.com/MichaelAPerry/keystone280-rack),
+also GPL-3.0-or-later. The plugin uses the original hardware model names and
+panels. The CardinalMini browser build for [michaelperry.org](https://michaelperry.org)
+opens **Dark-eyed Junco: Snowbirds at the Feeder** on first launch. The patch uses
+Cardinal's Host Audio module and keeps the original Keystone 280 modules and
+cables. CM1A takes MIDI from the Cardinal host.
+
+The [renamed edition for VCV Rack](https://github.com/MichaelAPerry/keystone280-vcv)
+uses different module slugs.
+
+The `plugins/Keystone280` entry in `.gitmodules` points to the rack edition.
+The submodule commit must be updated to the published rack edition before building.
 
 ## Build locally
 
